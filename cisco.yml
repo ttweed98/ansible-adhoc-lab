@@ -11,6 +11,6 @@
             enabled: true
 
     - name: Add IOP address tp L888
-      cisco.ios.ios_l3_interfaces:
+      cisco.ios.ios_l3_interface:
         name: Loopback888
         ipv4: 192.168.255.88/32
