@@ -1,0 +1,11 @@
+---
+- hosts: routers
+  become: yes
+
+  TASKS:
+    - name: Create Loopback888
+      cisco.ios.ios_interfaces:
+        config:
+          - name: Loopback888
+            description: Configured and Overridden by Ansible Network
+            enabled: true
